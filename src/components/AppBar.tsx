@@ -17,6 +17,7 @@ import QuestionHelper from './QuestionHelper'
 import { t } from '@lingui/macro'
 import LanguageSwitch from './LanguageSwitch'
 import { useLingui } from '@lingui/react'
+import {SidebarMenu} from 'components/StyledMenu'
 
 function AppBar(): JSX.Element {
     const { i18n } = useLingui()
@@ -46,10 +47,13 @@ function AppBar(): JSX.Element {
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <img src={Logo} alt="Sushi" className="h-10 w-auto" />
+                                        <img src={Logo} alt="RadioShack" className="h-10 w-auto" />
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
+                                        <SidebarMenu className="hidden sm:block sm:ml-4 pt-20">
+                                            <div>
+                                                <div className="flex flex-col">
                                             <NavLink id={`swap-nav-link`} to={'/swap'}>
                                                 {i18n._(t`Swap`)}
                                             </NavLink>
@@ -78,6 +82,7 @@ function AppBar(): JSX.Element {
                                                     {i18n._(t`RadioBar`)}
                                                 </NavLink>
                                             )}
+                                           
                                             {/* {chainId &&
                                                 [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(
                                                     chainId
@@ -119,6 +124,10 @@ function AppBar(): JSX.Element {
                                                         {i18n._(t`Analytics`)}
                                                     </ExternalLink>
                                                 )}  */}
+                                         
+                                                </div>
+                                            </div>
+                                        </SidebarMenu>
                                         </div>
                                     </div>
                                 </div>

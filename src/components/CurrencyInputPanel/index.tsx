@@ -160,9 +160,9 @@ export default function CurrencyInputPanel({
     const valueUSDC = formattedNum(Number(value) * Number(currencyUSDC))
 
     return (
-        <div id={id} className="rounded bg-dark-800 p-5">
-            <div
-                className="flex flex-col space-y-3 sm:space-y-0 sm:flex-row justify-between"
+        <div id={id} className="rounded bg-dark-800 p-3">
+             <div
+                className="flex flex-col space-y-3 space-x-5 sm:space-y-0 sm:flex-row justify-between"
                 // hideInput={hideInput}
                 // cornerRadiusBottomNone={cornerRadiusBottomNone}
                 // cornerRadiusTopNone={cornerRadiusTopNone}
@@ -190,8 +190,47 @@ export default function CurrencyInputPanel({
                         </RowBetween>
                     </LabelRow>
                 )} */}
+               
+                <div className="flex items-center rounded bg-dark-600 space-x-3 p-3 w-full sm:w-3/5 justify-between">
+                    {!hideInput && (
+                        <>
+                            {account && currency && showMaxButton && label !== 'To' && (
+                                <Button
+                                    onClick={onMax}
+                                    size="small"
+                                    className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap"
+                                >
+                                    {i18n._(t`Max`)}
+                                </Button>
+                            )}
+                            <NumericalInput
+                                className="token-amount-input"
+                                value={value}
+                                onUserInput={val => {
+                                    onUserInput(val)
+                                }}
+                            />
+                            {account && (
+                                <div className="flex flex-col">
+                                    <div
+                                        onClick={onMax}
+                                        className="font-medium cursor-pointer text-xs text-low-emphesis"
+                                    >
+                                        {!hideBalance && !!currency && selectedCurrencyBalance
+                                            ? (customBalanceText ?? 'Balance: ') +
+                                              selectedCurrencyBalance?.toSignificant(6)
+                                            : ' -'}
+                                    </div>
+                                    {chainId === ChainId.MAINNET && (
+                                        <div className="font-medium text-xs text-secondary">≈ {valueUSDC} USDC</div>
+                                    )}
+                                </div>
+                            )}
+                        </>
+                    )}
+                </div>
                 <div
-                    className="w-full sm:w-2/5"
+                    className="w-full sm:w-2/6"
                     // style={hideInput ? { padding: '0', borderRadius: '8px' } : {}}
                     // selected={disableCurrencySelect}
                 >
@@ -275,44 +314,7 @@ export default function CurrencyInputPanel({
                         </>
                     )} */}
                 </div>
-                <div className="flex items-center rounded bg-dark-900 space-x-3 p-3 w-full sm:w-3/5">
-                    {!hideInput && (
-                        <>
-                            {account && currency && showMaxButton && label !== 'To' && (
-                                <Button
-                                    onClick={onMax}
-                                    size="small"
-                                    className="bg-transparent hover:bg-primary border border-low-emphesis rounded-full text-secondary text-xs font-medium whitespace-nowrap"
-                                >
-                                    {i18n._(t`Max`)}
-                                </Button>
-                            )}
-                            <NumericalInput
-                                className="token-amount-input"
-                                value={value}
-                                onUserInput={val => {
-                                    onUserInput(val)
-                                }}
-                            />
-                            {account && (
-                                <div className="flex flex-col">
-                                    <div
-                                        onClick={onMax}
-                                        className="font-medium cursor-pointer text-xs text-low-emphesis"
-                                    >
-                                        {!hideBalance && !!currency && selectedCurrencyBalance
-                                            ? (customBalanceText ?? 'Balance: ') +
-                                              selectedCurrencyBalance?.toSignificant(6)
-                                            : ' -'}
-                                    </div>
-                                    {chainId === ChainId.MAINNET && (
-                                        <div className="font-medium text-xs text-secondary">≈ {valueUSDC} USDC</div>
-                                    )}
-                                </div>
-                            )}
-                        </>
-                    )}
-                </div>
+                
             </div>
             {!disableCurrencySelect && onCurrencySelect && (
                 <CurrencySearchModal

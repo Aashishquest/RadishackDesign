@@ -566,10 +566,10 @@ export default function RemoveLiquidity({
                             id="liquidity-percent"
                         />
                         <AutoColumn justify="space-between">
-                            <AutoRow justify={'flex-start'} style={{ padding: '0 1rem' }}>
+                            <AutoRow justify={'flex-end'} style={{ padding: '0 5rem' }}>
                                 <button className="bg-dark-900 rounded-full p-3px -mt-6 -mb-6 z-10">
                                     <div className="bg-dark-800 hover:bg-dark-700 rounded-full p-3">
-                                        <ArrowDown size="32" color={theme.text2} />
+                                        <ArrowDown size="32" color={theme.primary5} />
                                     </div>
                                 </button>
                             </AutoRow>

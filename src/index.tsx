@@ -23,6 +23,7 @@ import UserUpdater from './state/user/updater'
 import ThemeProvider, { ThemedGlobalStyle } from './theme'
 import getLibrary from './utils/getLibrary'
 import LanguageProvider from 'language'
+import background from '../assets/images/Background-image.jpg'
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
@@ -72,7 +73,7 @@ ReactDOM.render(
                         <Updaters />
                         <LanguageProvider>
                             <ThemeProvider>
-                                <ThemedGlobalStyle />
+                                <ThemedGlobalStyle/>
                                 <KashiProvider>
                                     <Router>
                                         <App />

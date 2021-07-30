@@ -43,6 +43,21 @@ export const StyledMenu = styled.div`
     margin-left: 0.2rem;
   `};
 `
+export const SidebarMenu = styled.div`
+background: #1f1f1f;
+width: 250px;
+height: 100vh;
+display: block;
+justify-content: flex-start;
+position:absolute;
+padding-left: 50px;
+padding-top: 3px;
+left:-20px;
+top: 80px;
+    ${({ theme }) => theme.mediaWidth.upToExtra2Small`
+    margin-left: 1rem;
+  `};
+`
 
 export const MenuFlyout = styled.span`
     min-width: 8.125rem;

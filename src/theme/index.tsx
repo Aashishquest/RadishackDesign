@@ -62,10 +62,10 @@ export function colors(darkMode: boolean): Colors {
         primary2: darkMode ? '#0097fb' : '#FF8CC3',
         primary3: darkMode ? '#00aff5' : '#FF99C9',
         primary4: darkMode ? '#376bad70' : '#F6DDE8',
-        primary5: darkMode ? '#153d6f70' : '#ebebeb',
+        primary5: darkMode ? '#dc3c3b' : '#ebebeb',
 
         // color text
-        primaryText1: darkMode ? '#6da8ff' : '#0e0e23',
+        primaryText1: darkMode ? '#ffffff' : '#0e0e23',
 
         // secondary colors
         secondary1: darkMode ? '#0094ec' : '#ff007a',
@@ -169,11 +169,12 @@ export const TYPE = {
     }
 }
 
+
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: #BFBFBF;
-  background-color: #0D0415;
-}
+  background-color: black !important;
+  }
 
 input, textarea {
     font-family: "DM Sans", sans-serif;
@@ -182,4 +183,5 @@ input, textarea {
 
 body {
   min-height: 100vh;
+
 `

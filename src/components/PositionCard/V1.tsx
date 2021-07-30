@@ -51,7 +51,7 @@ function V1PositionCard({ token, V1LiquidityBalance }: PositionCardProps) {
                         </ButtonSecondary>
 
                         <ButtonSecondary
-                            style={{ backgroundColor: 'transparent' }}
+                            style={{ backgroundColor: '#181818' }}
                             width="28%"
                             as={Link}
                             to={`/remove/v1/${V1LiquidityBalance.token.address}`}

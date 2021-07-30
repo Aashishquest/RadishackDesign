@@ -38,7 +38,45 @@ input:focus {
   background: #FA52A0;
   cursor: pointer;
 }
-
+.bg-dark-900 {
+  background-color: #1f1f1f !important;
+}
+.bg-dark-800 {
+  background-color: #1f1f1f !important;
+}
+.bg-dark-600 {
+  background-color: #181818 !important;
+  /* color: #5d5d5d !important; */
+  color: #dc3c3b !important;
+}
+.iiuOQn {
+  padding-right: 40%;
+  padding-inline-start: 250px !important;
+}
+.gcJQGv , .foZoKX , .hrMGNO{
+  background: #dc3c3b !important;
+}
+.fhohnZ, .goKIub{
+  background-color: #1f1f1f !important;
+}
+.dmZsHS {
+  width: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.glmNNv {
+  padding: 8px !important;
+}
+.gWIHNF{
+  background-color: #181818 !important;
+}
+.foZoKX:disabled, .gcJQGv:disabled{
+  background: #858788 !important;
+  color:#525354 !important;
+}
+.kGEHnd{
+  padding: 1.5rem !important;
+}
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;

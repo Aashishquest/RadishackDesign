@@ -340,12 +340,12 @@ export default function Swap() {
                                 <div className="flex justify-between items-center">
                                     <div>
                                         <div className="text-white">New Yield Farms: ibBTC, BIFI, dTOP </div>
-                                        <div className="text-purple text-sm">Add liquidity and stake now</div>
+                                        <div className="text-white text-sm">Add liquidity and stake now</div>
                                     </div>
                                     <div className=""></div>
                                     <Link
                                         to="/yield"
-                                        className="inline-flex items-center rounded-sm px-3 py-2 border-2 border-purple text-purple"
+                                        className="inline-flex items-center rounded-sm px-3 py-2 border-2 text-purple"
                                     >
                                         Visit Yield
                                     </Link>
@@ -379,8 +379,8 @@ export default function Swap() {
                         />
                         <AutoColumn justify="space-between">
                             <AutoRow
-                                justify={isExpertMode ? 'space-between' : 'flex-start'}
-                                style={{ padding: '0 1rem' }}
+                                justify={isExpertMode ? 'space-between' : 'flex-end'}
+                                style={{ padding: '0 5rem' }}
                             >
                                 <button
                                     className="bg-dark-900 rounded-full p-3px -mt-6 -mb-6 z-10"
