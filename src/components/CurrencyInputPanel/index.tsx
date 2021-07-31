@@ -160,7 +160,7 @@ export default function CurrencyInputPanel({
     const valueUSDC = formattedNum(Number(value) * Number(currencyUSDC))
 
     return (
-        <div id={id} className="rounded bg-dark-800 p-3">
+        <div id={id} className="rounded bg-dark-800 pt-5 pb-5 pl-3 pr-3">
              <div
                 className="flex flex-col space-y-3 space-x-5 sm:space-y-0 sm:flex-row justify-between"
                 // hideInput={hideInput}

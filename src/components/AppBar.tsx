@@ -47,14 +47,11 @@ function AppBar(): JSX.Element {
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <img src={Logo} alt="RadioShack" className="h-10 w-auto" />
+                                        <img src={Logo} alt="RadioShack" className="h-9 w-auto" />
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
-                                        <SidebarMenu className="hidden sm:block sm:ml-4 pt-20">
-                                            <div>
-                                                <div className="flex flex-col">
-                                            <NavLink id={`swap-nav-link`} to={'/swap'}>
+                                           <NavLink id={`swap-nav-link`} to={'/swap'}>
                                                 {i18n._(t`Swap`)}
                                             </NavLink>
                                             <NavLink
@@ -125,9 +122,6 @@ function AppBar(): JSX.Element {
                                                     </ExternalLink>
                                                 )}  */}
                                          
-                                                </div>
-                                            </div>
-                                        </SidebarMenu>
                                         </div>
                                     </div>
                                 </div>

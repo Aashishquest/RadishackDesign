@@ -336,7 +336,7 @@ export default function Swap() {
                     />
                     {chainId && chainId === ChainId.MATIC && (
                         <div className="hidden md:block pb-4 space-y-2">
-                            <DarkCard>
+                            {/* <DarkCard>
                                 <div className="flex justify-between items-center">
                                     <div>
                                         <div className="text-white">New Yield Farms: ibBTC, BIFI, dTOP </div>
@@ -349,16 +349,16 @@ export default function Swap() {
                                     >
                                         Visit Yield
                                     </Link>
-                                    {/* <a
+                                    <a
                                         href="https://ayokiroll.medium.com/cf7e932f3a8"
                                         target="_blank"
                                         rel="noreferrer noopener"
                                         className="inline-flex items-center rounded-sm px-3 py-2 border-2 border-purple text-purple"
                                     >
                                         Read Tutorial
-                                    </a> */}
+                                    </a>
                                 </div>
-                            </DarkCard>
+                            </DarkCard> */}
                         </div>
                     )}
                     <AutoColumn gap={'md'}>
@@ -399,6 +399,7 @@ export default function Swap() {
                                             autoplay={animateSwapArrows}
                                             loop={false}
                                             style={{ width: 32, height: 32 }}
+                                            color={theme.primary5}
 
                                             // className="text-secondary fill-current"
                                         />

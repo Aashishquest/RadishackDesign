@@ -18,7 +18,8 @@ module.exports = {
                 tl: 'to top left'
             },
             colors: {
-                'blue-pink': ['#27B0E6', '#FA52A0'],
+                'blue-pink': ['#dc3c3b', '#dc3c3b'],
+                'red' : ['#dc3c3b'],
                 'pink-red-light-brown': ['#FE5A75', '#FEC464']
             },
             background: {

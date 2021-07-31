@@ -235,12 +235,12 @@ export default function Pool() {
                             </Text>
                         )}
                         <div className="grid grid-cols-2 gap-4">
-                            <Button id="join-pool-button" color="gradient" onClick={() => history.push('/add/ETH')}>
+                            <Button id="join-pool-button" color="red" onClick={() => history.push('/add/ETH')}>
                                 {i18n._(t`Add Liquidity`)}
                             </Button>
                             <Button
                                 id="create-pool-button"
-                                color="default"
+                                color="red"
                                 className="bg-dark-800"
                                 onClick={() => history.push('/create/ETH')}
                             >

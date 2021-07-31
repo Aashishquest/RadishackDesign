@@ -77,7 +77,7 @@ export default function BalanceCard({
                             className={`
                                 flex flex-grow justify-center items-center
                                 h-14 mt-6 rounded
-                                bg-dark-700 text-high-emphesis
+                                bg-dark-750 text-high-emphesis
                                 focus:outline-none focus:ring hover:bg-opacity-80
                                 text-caption2 font-bold cursor-pointer
                             `}

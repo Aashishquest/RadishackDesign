@@ -49,14 +49,21 @@ input:focus {
   /* color: #5d5d5d !important; */
   color: #dc3c3b !important;
 }
+.bg-dark-650 {
+  background-color: #181818 !important;
+}
+.bg-dark-750 {
+  background: #dc3c3b !important;
+  color: white;
+}
 .iiuOQn {
   padding-right: 40%;
   padding-inline-start: 250px !important;
 }
-.gcJQGv , .foZoKX , .hrMGNO{
+.gcJQGv , .foZoKX , .hrMGNO, .eWWDHT, .Ftzol, .isRjAX{
   background: #dc3c3b !important;
 }
-.fhohnZ, .goKIub{
+.fhohnZ, .goKIub, .dPFAnX{
   background-color: #1f1f1f !important;
 }
 .dmZsHS {
@@ -64,13 +71,19 @@ input:focus {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+/* .cYWgln{
+  -webkit-fill-available: width;
+} */
+.WvWKZ {
+  margin-inline-start: 40% !important;
+}
 .glmNNv {
   padding: 8px !important;
 }
 .gWIHNF{
   background-color: #181818 !important;
 }
-.foZoKX:disabled, .gcJQGv:disabled{
+.foZoKX:disabled, .gcJQGv:disabled, .bg-dark-700, .htQlzy{
   background: #858788 !important;
   color:#525354 !important;
 }

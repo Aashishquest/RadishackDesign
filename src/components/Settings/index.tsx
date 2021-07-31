@@ -28,7 +28,7 @@ const StyledMenuIcon = styled(Settings)`
     width: 20px;
 
     > * {
-        stroke: ${({ theme }) => theme.text2};
+        stroke: ${({ theme }) => theme.primary5};
     }
 
     :hover {
