@@ -19,7 +19,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
         <div className="flex justify-between space-x-3 bg-dark-600 space-y-5">
             <div className="grid grid-cols-2 p-3px bg-dark-600">
                 <NavLink
-                    className="flex-col flex items-center pb-4 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
+                    className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
                     activeClassName="font-bold text-high-emphesis bg-dark-800 "
                     to={{
                         pathname: '/swap',
@@ -40,7 +40,7 @@ export default function SwapHeader({ input = undefined, output = undefined }: an
                     Limit Order
                 </NavLink> */}
                 <NavLink
-                    className="flex-col flex items-center pb-4 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
+                    className="flex-col flex items-center pb-4 pt-3 justify-center px-4 md:px-10 text-center text-secondary hover:text-high-emphesis text-base font-medium"
                     activeClassName="text-high-emphesis font-bold bg-dark-800 "
                     to={`/add/${input && input.address ? input.address : 'ETH'}${
                         output && output.address ? `/${output.address}` : ''

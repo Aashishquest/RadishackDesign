@@ -170,7 +170,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
     return (
         <>
             <TransactionFailedModal isOpen={modalOpen} onDismiss={() => setModalOpen(false)} />
-            <div className="bg-dark-900 shadow-swap-blue-glow w-full max-w-xl pt-2 pb-6 md:pb-9 px-3 md:pt-4 md:px-8 rounded">
+            <div className="bg-dark-900 w-full max-w-xl pt-2 pb-6 md:pb-9 px-3 md:pt-4 md:px-8 rounded">
                 <div className="flex w-full h-14 bg-dark-600 rounded">
                     <div
                         className="h-full w-6/12 p-0.5"
